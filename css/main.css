@@ -182,3 +182,35 @@ h1, h2, h3, h4, h5, h6 {
   -o-object-fit: cover;
      object-fit: cover;
 }
+
+.grid-items-1 {
+  display: grid;
+  grid-template: repeat(2, 1fr)/repeat(3, 1fr);
+}
+.grid-items-1__item_bg {
+  background: red;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.grid-items-2 {
+  display: grid;
+  grid-template: repeat(2, 1fr)/repeat(3, 1fr);
+}
+.grid-items-2__item_bg {
+  background: red;
+  grid-row-start: 2;
+  grid-column-start: 3;
+}
+
+.grid-items-3 {
+  display: grid;
+  grid-template: repeat(2, 1fr)/repeat(3, 1fr);
+}
+.grid-items-3__item_bg {
+  background: red;
+  grid-row-start: span 2;
+  grid-column-start: span 2;
+}
